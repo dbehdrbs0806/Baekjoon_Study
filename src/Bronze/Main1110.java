@@ -14,7 +14,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Main1110 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String args[]) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
         String token[] = input.split("");              // split을 사용해 token[] 에 하나씩 담김

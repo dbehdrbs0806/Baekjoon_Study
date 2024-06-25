@@ -20,7 +20,7 @@ public class Main1292 {
         StringTokenizer st = new StringTokenizer(input, " ");   // 띄어쓰기로 input을 쪼개 st로 저장
         int token1 = Integer.parseInt(st.nextToken());          // 입력받고 쪼갠 내용 st를 두 개의 변수로 받음
         int token2 = Integer.parseInt(st.nextToken());
-        int nums[] = new int[1000];                             // 값들을 담을 배열
+        int[] nums = new int[1000];                             // 값들을 담을 배열
         int a = 0;                                              // 인덱스로 사용할 변수
         int result = 0;
         for (int i = 0; i < 1000; i++) {
@@ -41,4 +41,5 @@ public class Main1292 {
 
 // 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ~~   =>  for (int i=0; i<1000; i++)
 // 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6 => for (int j=0; j < i; j++)
+
 
