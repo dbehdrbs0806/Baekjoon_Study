@@ -43,3 +43,5 @@ public class Main1181 {
     }
 }
 // but, no, wont, i, hesitate
+// 버블정렬을 통한 문자열 정렬을 진행 ArrayList 동적배열은 []의 접근이 아닌 get(), set() 함수로 접근함
+// HashSet은 중복되는 값이 존재하지 않는 집합배열임
