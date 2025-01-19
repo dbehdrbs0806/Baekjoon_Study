@@ -28,6 +28,7 @@ public class MainBuffer {
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         // StringTokenizer st = new StringTokenizer(br.readLine(), "~(이걸로 분리)")
+        // st : 입력받은 내용을 토큰화로 나눔
         // st.countToken()  분리하고 남은 단어(Token) 개수 반환
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         /* 입력받은 내용 출력 객체

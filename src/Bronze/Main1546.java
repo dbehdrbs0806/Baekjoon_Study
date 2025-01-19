@@ -9,7 +9,7 @@ public class Main1546 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());                // N 과목의 개수
-        String[]score_list = br.readLine().split(" ");    // 과목 점수 입력받음
+        String[] score_list = br.readLine().split(" ");   // 과목 점수 입력받음
         int temp = 0;                                           // 가장 높은 과목의 점수 M
         double all_score = 0;                                   // 평균 계산을 위한
         double result;
