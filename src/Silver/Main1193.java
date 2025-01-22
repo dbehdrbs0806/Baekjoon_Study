@@ -1,7 +1,6 @@
-package Sliver;
+package Silver;
 
 import java.io.*;        // BufferReader, InputStreamReader 등
-import java.util.*;      // ArrayList, HashSet 등
 
 public class Main1193 {
     public static void main(String[] args) throws Exception {

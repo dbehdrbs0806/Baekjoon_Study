@@ -1,4 +1,4 @@
-package Sliver;
+package Silver;
 
 import java.io.*;
 import java.lang.*;
