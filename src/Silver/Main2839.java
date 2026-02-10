@@ -64,7 +64,10 @@ public class Main2839 {
         if (n >= 5) dp[5] = 1;
 
         for (int i=6; i<=n; i++) {
-            dp[i] = Math.min(dp[i - 3], dp[i - 5]) + 1;
+            dp[i] = Math.min(dp[i - 3], dp[i - 5]) + 1;         // 3kg 봉지와 5kg 봉지 중 적은 개수 사용
+            // n = 8 이라면 dp[5]=1, dp[3]=1 로  dp[8] = 2;
+            // n = 9 dp[9] dp[6]=2, dp[4]=-1로  dp[9] = 3;
+            // n = 18 dp[15]=3, dp[13]=3로      dp[18] = 4;
         }
         if (dp[n] >= 9999) {
             System.out.println(-1);
@@ -73,7 +76,7 @@ public class Main2839 {
             System.out.println(dp[n]);
         }
     }
-    // 그리디 문제
+    // 그리디 방법
     static int greedy(int n) {
         int res = 0;                  // 봉지 개수
 
