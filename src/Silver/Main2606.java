@@ -65,7 +65,7 @@ public class Main2606 {
         graph = new ArrayList[node + 1];  // 동적 노드 배열
         visited = new boolean[node + 1];           // 방문 체크
 
-        for (int i = 1; i<=conn; i++) {                      // ArrayList 초기화
+        for (int i = 1; i<=node; i++) {                      // ArrayList 초기화
              graph[i] = new ArrayList<>();
         }
 
@@ -78,5 +78,6 @@ public class Main2606 {
             graph[b].add(a);
         }
         dfs(1);
+        System.out.println(count);
     }
 }
