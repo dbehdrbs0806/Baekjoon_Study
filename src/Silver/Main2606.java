@@ -43,11 +43,32 @@ public class Main2606 {
 
     static void dfs(int n) {
         visited[n] = true;          // 1번 컴퓨터 visited 처리
+                                    // 1번 컴퓨터 count를 줄이기 위해 visited[n] = true를 처음에 두는 것
 
         for (int t: graph[n]) {
             if (!visited[t]) {
                 count++;
                 dfs(t);
+            }
+        }
+    }
+    static void bfs(int n) {
+        Queue<Integer> q = new ArrayDeque<>();          // bfs 처리를 위한 queue
+
+        visited[n] = true;
+        q.add(n);
+
+        int count = 0;
+
+        while (!q.isEmpty()) {
+            int cur = q.poll();
+
+            for (int next : graph[cur]) {
+                if (!visited[next]) {
+                    visited[next] = true;
+                    q.add(next);
+                    count++;            // start를 통해 새로 방문(감염)된 컴퓨터 1대
+                }
             }
         }
     }
